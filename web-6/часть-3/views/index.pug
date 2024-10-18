@@ -1,0 +1,5 @@
+h1 Список статей
+each article in articles
+   h2 #{article.title}
+   p #{article.description}
+   a(href=`/articles/${article._id}`) Подробнее

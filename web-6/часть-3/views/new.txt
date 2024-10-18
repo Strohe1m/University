@@ -1,0 +1,10 @@
+h1 Создать новую статью
+form(action='/articles' method='POST')
+div
+label Название
+input(type='text' name='title' value=article.title required)
+div
+label Описание
+textarea(name='description' required)=article.description
+div
+button(type='submit') Создать статью
